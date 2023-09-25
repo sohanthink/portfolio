@@ -82,14 +82,37 @@ header .navbar .main-nav .left{
 }
 header .navbar .main-nav .logo{
   width: 33%;
+  text-align: center;
+}
+header .navbar .main-nav .right-icon{
+  width: 33%;
+  text-align: end;
 }
 header .navbar .main-nav .logo img{
   width: 10%;
 }
-header .navbar .main-nav .rigth-icon{
-  width: 33%;
+header .navbar .main-nav .right-icon svg{
+  color: var(--dark);
+  background-color: var(--secondary-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 30px;
+}
+header .navbar .main-nav .right-icon .button{
+  display: flex;
+  justify-content: end;
 }
 
+header .main-nav .right-icon .button a{
+  font-size: 15px;
+  color: #ffffff;
+  padding: 15px 45px;
+  border-radius: 25px;
+  font-weight: 400;
+  font-family: var(--secondary-font);
+  background: var(--secondary-color);
+}
 
 /* default bootstraph css change */
 
@@ -270,6 +293,7 @@ header .navbar .main-nav .rigth-icon{
 .info .portfolio .overlay{
   background-color: #252525ba;
   position: relative;
+  height: 100%;
 }
 .info .portfolio .overlay .h-btn {
   position: absolute;
