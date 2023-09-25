@@ -49,7 +49,10 @@ body{
     background-image: url(../images/dark-bg.png);
 }
 
-/* left portion design */
+/*==================================================
+                common class for div style start
+==================================================*/
+
 
 .bg-custom{
   border: 1px solid;
@@ -60,10 +63,54 @@ body{
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(32, 32, 32, 0.1) 100%);
   overflow: hidden;
 }
+
+/*==================================================
+                header sections style start
+==================================================*/
+
+header .navbar{
+  font-family: var(--primary-font);
+}
+header .navbar .main-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .navbar .main-nav .left{
+  width: 33%;
+}
+header .navbar .main-nav .logo{
+  width: 33%;
+}
+header .navbar .main-nav .logo img{
+  width: 10%;
+}
+header .navbar .main-nav .rigth-icon{
+  width: 33%;
+}
+
+
+/* default bootstraph css change */
+
+.navbar-nav .nav-link.active{
+  color: var(--secondary-color);
+}
+.nav-link{
+  color: white;
+}
+
+/*==================================================
+                main sections style start
+==================================================*/
+
+
+
 .info .card img{
   width: 70%;
   border-radius: 40px;
   margin: 40px 0;
+  border: 0.5px solid white;
 }
 .info .card .border-r{
   border-radius: 10px;
@@ -99,6 +146,9 @@ body{
     justify-content: space-around;
     margin-bottom: 10px;
 }
+.info .card .down{
+  margin-bottom: 50px;
+}
 .info .card .button a{
     font-size: 15px;
     color: #050507;
@@ -121,7 +171,7 @@ body{
   font-family: var(--primary-font);
 }
 .info .right h1{
-  font-weight: 700;
+  font-weight: 600;
   font-size: 60px;
   margin-top: 20px;
 }
@@ -143,7 +193,98 @@ body{
   left: 55px;
   top :82px;
 }
+.info .right .box .content h2{
+  color: white;
+  font-family: var(--primary-font);
+  font-size: 45px;
+  font-weight: 600;
 
-/* left portion design complete */
+}
+.info .right .box .content h3{
+  color: var(--primary-color);
+  font-size: 20px;
+}
+.info .right .box{
+  padding: 30px 0;
+  margin: 20px 0;
+}
 
-
+.info .right .box .service{
+  background-image: url(../images/service-bg.png);
+  width: 100%;
+}
+.info .right .box marquee{
+  font-size: 177px;
+  font-weight: 800;
+  font-family: var(--secondary-font);
+}
+.info .right .box marquee a{
+  color: var(--secondary-color);
+}
+.info .right .box .blog .left{
+  width: 75%;
+  padding: 0 20px
+}
+.info .right .box .blog .left h4{
+  color: white;
+  font-family: var(--primary-font);
+  font-weight: 600;
+}
+.info .right .box .blog .left p{
+  color: var(--primary-color);
+  font-family: var(--secondary-font);
+  font-weight: 500;
+}
+.info .right .box .blog .right svg{
+  color: white;
+  font-size: 60px;
+}
+.info .right .box2{
+  padding: 20px;
+}
+.info .right .box2 .experties .two svg{
+  font-size: 75px;
+  color: var(--secondary-color);
+}
+.info .right .box2 .experties .two p{
+  font-size: 25px;
+  line-height: 32px;
+}
+.info .right .box2 .experties .three svg{
+  font-size: 75px;
+  color: var(--secondary-color);
+}
+.info .right .box2 .experties .three p{
+  font-size: 25px;
+  line-height: 32px;
+}
+.info .portfolio{
+  background-image: url(../images/portfoliobg.jpg);
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+}
+.info .portfolio img{
+  width: 100%;
+}
+.info .portfolio .overlay{
+  background-color: #252525ba;
+  position: relative;
+}
+.info .portfolio .overlay .h-btn {
+  position: absolute;
+  z-index: 999;
+  top: 20%;
+  right: 5%;
+  background: var(--secondary-color);
+  padding: 10px 30px;
+  border-radius: 25px;
+  rotate: 270deg;
+}
+.info .portfolio .overlay .h-btn a{
+  color: var(--dark);
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+}
