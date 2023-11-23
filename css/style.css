@@ -63,7 +63,9 @@ body{
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(32, 32, 32, 0.1) 100%);
   overflow: hidden;
 }
-
+.primary-color{
+  color: var(--primary-color);
+}
 /*==================================================
                 header sections style start
 ==================================================*/
@@ -192,6 +194,7 @@ header .main-nav .right-icon .button a{
 .info .right h5,h1{
   color: white;
   font-family: var(--primary-font);
+  font-weight: 300;
 }
 .info .right h1{
   font-weight: 600;
@@ -282,7 +285,7 @@ header .main-nav .right-icon .button a{
   line-height: 32px;
 }
 .info .portfolio{
-  background-image: url(../images/portfoliobg.jpg);
+  background-image: url(../images/portfoliobg2.jpg);
   width: 100%;
   height: 400px;
   background-size: cover;
@@ -291,7 +294,7 @@ header .main-nav .right-icon .button a{
   width: 100%;
 }
 .info .portfolio .overlay{
-  background-color: #252525ba;
+  background-color: #252525d6;
   position: relative;
   height: 100%;
 }
@@ -311,4 +314,43 @@ header .main-nav .right-icon .button a{
   font-weight: 600;
   font-size: 20px;
   text-transform: uppercase;
+}
+/*==================================================
+                contact page  style start
+==================================================*/
+.list-group-item {
+  background-color: rgba(0, 0, 0, 0);
+}
+.info .contact_info{
+  color: white !important;
+  padding: 40px;
+}
+.list-group-flush > .list-group-item {
+  border-color: white;
+  line-height: 70px;
+}
+.info .contact_info ul li a{
+  font-size: 40px;
+  color: white;
+  transition: all linear 0.4s;
+  font-family: var(--secondary-font);
+
+}
+.info .contact_info ul li a:hover{
+  color: var(--secondary-color);
+}
+.info .contact_info ul .static svg{
+  font-size: 40px;
+  color: white;
+  transition: all linear 0.4s;
+  
+}
+.info .contact_info ul .static span{
+  font-size: 40px;
+  color: white;
+  font-family: var(--secondary-font);
+  transition: all linear 0.4s;
+}
+.info .right .box_contact{
+  padding: 30px 0;
 }
