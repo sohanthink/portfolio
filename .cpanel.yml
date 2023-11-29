@@ -2,6 +2,7 @@
 deploy:
   tasks:
     - export DEPLOYPATH=/home/sohanthink/public_html 
+    - /bin/cp .cpanel.yml $DEPLOYPATH
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp contact.html $DEPLOYPATH
     - /bin/cp portfolio.html $DEPLOYPATH
