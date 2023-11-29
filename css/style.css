@@ -2,51 +2,55 @@
                 common css start
 ==================================================*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; }
-  
-  a,
-  a:focus,
-  a:hover {
-    text-decoration: none; 
-  }
-  
-  ol,
-  ul {
-    list-style: none; }
-  
-  img {
-    vertical-align: middle; }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  li,
-  ol,
-  p,
-  ul {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-family: var(--secondary-font)
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+ol,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: var(--secondary-font)
 }
 
 
 :root {
-    --primary-font: "League Spartan", sans-serif;
-    --secondary-font:"Poppins", sans-serif;
-    --dark: #202020;
-    --dark2: #101010;
-    --secondary-color:#00c566;
-    --primary-color:#a0a1a6;
+  --primary-font: "League Spartan", sans-serif;
+  --secondary-font: "Poppins", sans-serif;
+  --dark: #202020;
+  --dark2: #101010;
+  --secondary-color: #00c566;
+  --primary-color: #a0a1a6;
 }
-body{
-    scroll-behavior: smooth;
-    background-color: #202020;
-    background-image: url(../images/dark-bg.png);
+
+body {
+  scroll-behavior: smooth;
+  background-color: #202020;
+  background-image: url(../images/dark-bg.png);
 }
 
 /*==================================================
@@ -54,7 +58,7 @@ body{
 ==================================================*/
 
 
-.bg-custom{
+.bg-custom {
   border: 1px solid;
   border-width: 1px;
   border-image-slice: 1;
@@ -63,37 +67,45 @@ body{
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(32, 32, 32, 0.1) 100%);
   overflow: hidden;
 }
-.primary-color{
+
+.primary-color {
   color: var(--primary-color);
 }
+
 /*==================================================
                 header sections style start
 ==================================================*/
 
-header .navbar{
+header .navbar {
   font-family: var(--primary-font);
 }
+
 header .navbar .main-nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .navbar .main-nav .left{
+
+header .navbar .main-nav .left {
   width: 33%;
 }
-header .navbar .main-nav .logo{
+
+header .navbar .main-nav .logo {
   width: 33%;
   text-align: center;
 }
-header .navbar .main-nav .right-icon{
+
+header .navbar .main-nav .right-icon {
   width: 33%;
   text-align: end;
 }
-header .navbar .main-nav .logo img{
+
+header .navbar .main-nav .logo img {
   width: 10%;
 }
-header .navbar .main-nav .right-icon svg{
+
+header .navbar .main-nav .right-icon svg {
   color: var(--dark);
   background-color: var(--secondary-color);
   width: 50px;
@@ -101,12 +113,13 @@ header .navbar .main-nav .right-icon svg{
   border-radius: 50%;
   line-height: 30px;
 }
-header .navbar .main-nav .right-icon .button{
+
+header .navbar .main-nav .right-icon .button {
   display: flex;
   justify-content: end;
 }
 
-header .main-nav .right-icon .button a{
+header .main-nav .right-icon .button a {
   font-size: 15px;
   color: #ffffff;
   padding: 15px 45px;
@@ -118,10 +131,11 @@ header .main-nav .right-icon .button a{
 
 /* default bootstraph css change */
 
-.navbar-nav .nav-link.active{
+.navbar-nav .nav-link.active {
   color: var(--secondary-color);
 }
-.nav-link{
+
+.nav-link {
   color: white;
 }
 
@@ -131,173 +145,212 @@ header .main-nav .right-icon .button a{
 
 
 
-.info .card img{
+.info .card img {
   width: 70%;
   border-radius: 40px;
   margin: 40px 0;
   border: 0.5px solid white;
 }
-.info .card .border-r{
+
+.info .card .border-r {
   border-radius: 10px;
 }
-.info .card h2{
+
+.info .card h2 {
   font-family: var(--primary-font);
   font-weight: 700;
   color: white;
 }
-.info .card h5 a{
+
+.info .card h5 a {
   color: var(--primary-color);
   font-size: 15px;
 }
-.info .card h6{
+
+.info .card h6 {
   font-family: var(--primary-font);
   margin-bottom: 25px;
 }
-.info .card .btm{
+
+.info .card .btm {
   margin-bottom: 40px;
 }
-.info .card .icon{
+
+.info .card .icon {
   margin-bottom: 40px;
 }
-.info .card .icon a svg{
+
+.info .card .icon a svg {
   height: 35px;
   width: 35px;
   border-radius: 50%;
   color: white;
 }
-.info .card .button{
-    display: flex;
-    align-content: center;
-    justify-content: space-around;
-    margin-bottom: 10px;
+
+.info .card .button {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
 }
-.info .card .down{
+
+.info .card .down {
   margin-bottom: 50px;
 }
-.info .card .button a{
-    font-size: 15px;
-    color: #050507;
-    padding: 10px 54px;
-    border-radius: 25px;
-    font-weight: 800;
-    background: var(--secondary-color);
+
+.info .card .button a {
+  font-size: 15px;
+  color: #050507;
+  padding: 10px 54px;
+  border-radius: 25px;
+  font-weight: 800;
+  background: var(--secondary-color);
 }
-.info .card .button a svg{
+
+.info .card .button a svg {
   color: white;
+  rotate: 315deg;
 }
-.info .right .up{
+
+.info .right .up {
   padding: 50px 40px;
 }
-.info .right h5{
+
+.info .right h5 {
   font-size: 40px;
 }
-.info .right h5,h1{
+
+.info .right h5,
+h1 {
   color: white;
   font-family: var(--primary-font);
   font-weight: 300;
 }
-.info .right h1{
+
+.info .right h1 {
   font-weight: 600;
   font-size: 60px;
   margin-top: 20px;
 }
-.info .right h1 span{
+
+.info .right h1 span {
   color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--secondary-color);
-    -webkit-transition: all 300ms ease;
-    transition: all 300ms ease;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--secondary-color);
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
 }
-.info .right h1 span:hover{
+
+.info .right h1 span:hover {
   color: var(--secondary-color);
 }
-.info .right{
+
+.info .right {
   position: relative;
 }
-.info .right .shape{
-  position:absolute;
+
+.info .right .shape {
+  position: absolute;
   left: 55px;
-  top :82px;
+  top: 82px;
 }
-.info .right .box .content h2{
+
+.info .right .box .content h2 {
   color: white;
   font-family: var(--primary-font);
   font-size: 45px;
   font-weight: 600;
 
 }
-.info .right .box .content h3{
+
+.info .right .box .content h3 {
   color: var(--primary-color);
   font-size: 20px;
 }
-.info .right .box{
+
+.info .right .box {
   padding: 30px 0;
   margin: 20px 0;
 }
 
-.info .right .box .service{
+.info .right .box .service {
   background-image: url(../images/service-bg.png);
   width: 100%;
 }
-.info .right .box marquee{
+
+.info .right .box marquee {
   font-size: 177px;
   font-weight: 800;
   font-family: var(--secondary-font);
 }
-.info .right .box marquee a{
+
+.info .right .box marquee a {
   color: var(--secondary-color);
 }
-.info .right .box .blog .left{
+
+.info .right .box .blog .left {
   width: 75%;
   padding: 0 20px
 }
-.info .right .box .blog .left h4{
+
+.info .right .box .blog .left h4 {
   color: white;
   font-family: var(--primary-font);
   font-weight: 600;
 }
-.info .right .box .blog .left p{
+
+.info .right .box .blog .left p {
   color: var(--primary-color);
   font-family: var(--secondary-font);
   font-weight: 500;
 }
-.info .right .box .blog .right svg{
+
+.info .right .box .blog .right svg {
   color: white;
   font-size: 60px;
 }
-.info .right .box2{
+
+.info .right .box2 {
   padding: 20px;
 }
-.info .right .box2 .experties .two svg{
+
+.info .right .box2 .experties .two svg {
   font-size: 75px;
   color: var(--secondary-color);
 }
-.info .right .box2 .experties .two p{
+
+.info .right .box2 .experties .two p {
   font-size: 25px;
   line-height: 32px;
 }
-.info .right .box2 .experties .three svg{
+
+.info .right .box2 .experties .three svg {
   font-size: 75px;
   color: var(--secondary-color);
 }
-.info .right .box2 .experties .three p{
+
+.info .right .box2 .experties .three p {
   font-size: 25px;
   line-height: 32px;
 }
-.info .portfolio{
+
+.info .portfolio {
   background-image: url(../images/portfoliobg2.jpg);
   width: 100%;
   height: 400px;
   background-size: cover;
 }
-.info .portfolio img{
+
+.info .portfolio img {
   width: 100%;
 }
-.info .portfolio .overlay{
+
+.info .portfolio .overlay {
   background-color: #252525d6;
   position: relative;
   height: 100%;
 }
+
 .info .portfolio .overlay .h-btn {
   position: absolute;
   z-index: 999;
@@ -308,49 +361,85 @@ header .main-nav .right-icon .button a{
   border-radius: 25px;
   rotate: 270deg;
 }
-.info .portfolio .overlay .h-btn a{
+
+.info .portfolio .overlay .h-btn a {
   color: var(--dark);
   font-family: var(--primary-font);
   font-weight: 600;
   font-size: 20px;
   text-transform: uppercase;
 }
+
 /*==================================================
                 contact page  style start
 ==================================================*/
 .list-group-item {
   background-color: rgba(0, 0, 0, 0);
 }
-.info .contact_info{
+
+.info .contact_info {
   color: white !important;
   padding: 40px;
 }
-.list-group-flush > .list-group-item {
+
+.list-group-flush>.list-group-item {
   border-color: white;
   line-height: 70px;
 }
-.info .contact_info ul li a{
+
+.info .contact_info ul li a {
   font-size: 40px;
   color: white;
   transition: all linear 0.4s;
   font-family: var(--secondary-font);
 
 }
-.info .contact_info ul li a:hover{
+
+.info .contact_info ul li a:hover {
   color: var(--secondary-color);
 }
-.info .contact_info ul .static svg{
+
+.info .contact_info ul .static svg {
   font-size: 40px;
   color: white;
   transition: all linear 0.4s;
-  
+
 }
-.info .contact_info ul .static span{
+
+.info .contact_info ul .static span {
   font-size: 40px;
   color: white;
   font-family: var(--secondary-font);
   transition: all linear 0.4s;
 }
-.info .right .box_contact{
+
+.info .right .box_contact {
   padding: 30px 0;
+}
+
+/*==================================================
+                portfolio page  style start
+==================================================*/
+
+.info .portfolio_section .skills {
+  margin: 20px 0;
+}
+
+.info .portfolio_section .portfolio_content_right svg {
+  font-size: 27px;
+  rotate: 315deg;
+}
+
+.info .portfolio_section .skills span {
+  border: 1px solid white;
+  padding: 8px 15px;
+  border-radius: 15px;
+  background-color: #202020;
+  color: #2c2626;
+  font-size: 13px;
+}
+
+.info .portfolio_section h2 {
+  font-family: var(--primary-font);
+  padding: 20px 0 0 0;
 }
