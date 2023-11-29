@@ -1,0 +1,9 @@
+deploy:
+  tasks:
+    - export DEPLOYPATH=/home/sohanthink/public_html 
+    - /bin/cp -R $HOME/repo/* $DEPLOYPATH
+    - /bin/find $DEPLOYPATH -type d -exec /bin/chmod 755 {} \;
+    - /bin/find $DEPLOYPATH -type f -exec /bin/chmod 644 {} \;
+    - /bin/chown -R sohanthink:sohanthink $DEPLOYPATH
+  metadata:
+    version: 1
