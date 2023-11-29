@@ -1,3 +1,4 @@
+---
 deploy:
   tasks:
     - export DEPLOYPATH=/home/sohanthink/public_html 
