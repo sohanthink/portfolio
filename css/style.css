@@ -34,9 +34,8 @@ p,
 ul {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: var(--secondary-font)
+  font-family: var(--secondary-font);
 }
-
 
 :root {
   --primary-font: "League Spartan", sans-serif;
@@ -57,14 +56,21 @@ body {
                 common class for div style start
 ==================================================*/
 
-
 .bg-custom {
   border: 1px solid;
   border-width: 1px;
   border-image-slice: 1;
-  border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(32, 32, 32, 0.1) 100%);
+  border-image-source: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(32, 32, 32, 0.1) 100%
+  );
   border-radius: 10px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(32, 32, 32, 0.1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.04) 0%,
+    rgba(32, 32, 32, 0.1) 100%
+  );
   overflow: hidden;
 }
 
@@ -92,7 +98,6 @@ header .navbar .main-nav .left {
 }
 
 header .navbar .main-nav .logo {
-  width: 33%;
   text-align: center;
 }
 
@@ -102,7 +107,7 @@ header .navbar .main-nav .right-icon {
 }
 
 header .navbar .main-nav .logo img {
-  width: 10%;
+  width: 40%;
 }
 
 header .navbar .main-nav .right-icon svg {
@@ -142,8 +147,6 @@ header .main-nav .right-icon .button a {
 /*==================================================
                 main sections style start
 ==================================================*/
-
-
 
 .info .card img {
   width: 70%;
@@ -260,7 +263,6 @@ h1 {
   font-family: var(--primary-font);
   font-size: 45px;
   font-weight: 600;
-
 }
 
 .info .right .box .content h3 {
@@ -290,7 +292,7 @@ h1 {
 
 .info .right .box .blog .left {
   width: 75%;
-  padding: 0 20px
+  padding: 0 20px;
 }
 
 .info .right .box .blog .left h4 {
@@ -382,7 +384,7 @@ h1 {
   padding: 40px;
 }
 
-.list-group-flush>.list-group-item {
+.list-group-flush > .list-group-item {
   border-color: white;
   line-height: 70px;
 }
@@ -392,7 +394,6 @@ h1 {
   color: white;
   transition: all linear 0.4s;
   font-family: var(--secondary-font);
-
 }
 
 .info .contact_info ul li a:hover {
@@ -403,7 +404,6 @@ h1 {
   font-size: 40px;
   color: white;
   transition: all linear 0.4s;
-
 }
 
 .info .contact_info ul .static span {
