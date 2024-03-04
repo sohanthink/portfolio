@@ -443,3 +443,35 @@ h1 {
   font-family: var(--primary-font);
   padding: 20px 0 0 0;
 }
+/*==================================================
+                portfolio details  style start
+==================================================*/
+
+.info .portfolio_banner {
+  height: 450px;
+  overflow: hidden;
+}
+.info .portfolio_banner img {
+  width: 100%; /* Set the width of the image to 100% of the parent div */
+  height: auto; /* Maintain the aspect ratio */
+  display: block;
+  background-size: cover;
+}
+.portfolio_details_content p {
+  color: var(--primary-color);
+  padding: 12px 0;
+}
+.portfolio_details_right {
+  color: white;
+}
+
+.portfolio_details_right .item {
+  border-bottom: 1px solid grey;
+  padding: 20px 8px;
+}
+.portfolio_details_right .item p {
+  line-height: 40px;
+}
+.portfolio_details_right .item h5 {
+  color: var(--primary-color);
+}
