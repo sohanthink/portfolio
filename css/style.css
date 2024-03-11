@@ -1,6 +1,12 @@
 /*==================================================
                 common css start
 ==================================================*/
+
+@font-face {
+  font-family: "Ethos Nova";
+  src: url("../fonts/EthosNova-Bold.woff") format("woff");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -36,9 +42,13 @@ ul {
   margin-bottom: 0;
   font-family: var(--secondary-font);
 }
+p {
+  font-weight: 200;
+}
 
 :root {
-  --primary-font: "League Spartan", sans-serif;
+  /* --primary-font: "League Spartan", sans-serif; */
+  --primary-font: "Ethos Nova";
   --secondary-font: "Poppins", sans-serif;
   --dark: #202020;
   --dark2: #101010;
@@ -228,6 +238,7 @@ h1 {
   color: white;
   font-family: var(--primary-font);
   font-weight: 300;
+  font-size: 27px;
 }
 
 .info .right h1 {
@@ -443,6 +454,7 @@ h1 {
   font-family: var(--primary-font);
   padding: 20px 0 0 0;
 }
+
 /*==================================================
                 portfolio details  style start
 ==================================================*/
@@ -482,4 +494,51 @@ h1 {
   font-family: var(--secondary-font);
   font-size: 15px;
   margin-bottom: 10px;
+}
+
+/*==================================================
+                about ppage details  style start
+==================================================*/
+
+.display_picture {
+  height: 500px;
+  background-image: url(../images/dp-2.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* .display_picture img {
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+  background-position: bottom;
+} */
+
+.about_details {
+  padding: 40px;
+}
+
+.about_details h2 {
+  color: white;
+  font-size: 40px;
+  padding: 10px 0;
+}
+
+/* =======================================
+======================= responsive css
+======================================= */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 320px) and (max-width: 575.98px) {
+  .navbar {
+    flex-wrap: nowrap;
+  }
+  header .main-nav .left ul {
+    background: #474747;
+    padding: 18px;
+    position: absolute;
+    top: 0px;
+    left: 45px;
+    z-index: 2;
+  }
 }
