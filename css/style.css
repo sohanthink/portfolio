@@ -447,6 +447,9 @@ h1 {
                 portfolio details  style start
 ==================================================*/
 
+.col-lg-12 {
+  padding: 0;
+}
 .info .portfolio_banner {
   height: 450px;
   overflow: hidden;
@@ -471,7 +474,12 @@ h1 {
 }
 .portfolio_details_right .item p {
   line-height: 40px;
+  font-family: var(--primary-font);
+  font-size: 22px;
 }
 .portfolio_details_right .item h5 {
   color: var(--primary-color);
+  font-family: var(--secondary-font);
+  font-size: 15px;
+  margin-bottom: 10px;
 }
