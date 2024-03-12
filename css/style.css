@@ -485,6 +485,7 @@ h1 {
 }
 .portfolio_details_right {
   color: white;
+  padding: 30px;
 }
 
 .portfolio_details_right .item {
