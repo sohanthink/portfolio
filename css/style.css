@@ -13,10 +13,16 @@
   box-sizing: border-box;
 }
 
+a {
+  color: white;
+  transition: all linear 0.4s;
+}
+
 a,
 a:focus,
 a:hover {
   text-decoration: none;
+  color: #00c566;
 }
 
 ol,
@@ -221,7 +227,7 @@ header .main-nav .right-icon .button a {
 }
 
 .info .card .button a svg {
-  color: white;
+  color: #323232;
   rotate: 315deg;
 }
 
@@ -441,7 +447,7 @@ h1 {
   rotate: 315deg;
 }
 
-.info .portfolio_section .skills span {
+.skills span {
   border: 1px solid white;
   padding: 8px 15px;
   border-radius: 15px;
@@ -465,6 +471,7 @@ h1 {
 .info .portfolio_banner {
   height: 450px;
   overflow: hidden;
+  margin-bottom: 40px;
 }
 .info .portfolio_banner img {
   width: 100%; /* Set the width of the image to 100% of the parent div */
@@ -488,6 +495,9 @@ h1 {
   line-height: 40px;
   font-family: var(--primary-font);
   font-size: 22px;
+}
+.portfolio_details_right .item p a {
+  text-decoration: underline;
 }
 .portfolio_details_right .item h5 {
   color: var(--primary-color);
@@ -524,6 +534,58 @@ h1 {
   padding: 10px 0;
 }
 
+.education h4 {
+  font-size: 29px;
+  font-family: var(--secondary-font);
+  padding: 35px 35px 35px 0;
+  border-bottom: 1px solid grey;
+  width: 83%;
+  margin-left: 47px;
+}
+.education ul {
+  padding: 0 45px;
+}
+.education ul .item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid grey;
+  align-items: center;
+}
+.education ul .item li {
+  font-size: 25px;
+  font-family: var(--secondary-font);
+  width: 65%;
+}
+.education ul .item:last-child {
+  border-bottom: none;
+}
+.education ul .item span {
+  width: 35%;
+  font-size: 17px;
+  font-family: var(--secondary-font);
+  color: var(--primary-color);
+}
+.education .skills {
+  margin: 24px 47px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.about_get_left {
+  width: 60%;
+  padding: 0 20px;
+}
+.about_get_left a {
+  color: white;
+}
+.about_icon a svg {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  color: white;
+}
+
 /* =======================================
 ======================= responsive css
 ======================================= */
@@ -540,5 +602,47 @@ h1 {
     top: 0px;
     left: 45px;
     z-index: 2;
+  }
+  .info .portfolio .overlay .h-btn {
+    top: 64%;
+    right: -8%;
+  }
+  .mobile_none {
+    display: none;
+  }
+  .display_picture {
+    height: 336px;
+    background-position: bottom;
+  }
+  .about_details {
+    padding: 0px;
+    padding-top: 15px;
+  }
+  .about_details h2 {
+    font-size: 29px;
+  }
+  .info .right h5,
+  h1 {
+    font-size: 17px;
+  }
+  .info .portfolio_banner {
+    height: 231px;
+    margin-bottom: 0;
+  }
+  .mobile_custom_bg {
+    background: none;
+    border: none;
+  }
+  .info .right h1 {
+    margin-top: 46px;
+  }
+  .education ul .item li {
+    font-size: 19px;
+  }
+  .education ul .item span {
+    font-size: 16px;
+  }
+  .about_get_left {
+    width: 50%;
   }
 }
