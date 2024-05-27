@@ -216,6 +216,13 @@ header .main-nav .right-icon .button a {
 .info .card .down {
   margin-bottom: 50px;
 }
+.info .button.down a {
+  background-color: rgba(255, 255, 255, 0.228) !important;
+  color: white !important;
+}
+.info .button.down svg {
+  color: white !important;
+}
 
 .info .card .button a {
   font-size: 15px;
@@ -228,7 +235,7 @@ header .main-nav .right-icon .button a {
 
 .info .card .button a svg {
   color: #323232;
-  rotate: 315deg;
+  rotate: 391deg;
 }
 
 .info .right .up {
@@ -384,7 +391,7 @@ h1 {
 .info .portfolio .overlay .h-btn a {
   color: var(--dark);
   font-family: var(--primary-font);
-  font-weight: 600;
+  font-weight: bold;
   font-size: 20px;
   text-transform: uppercase;
 }
@@ -403,16 +410,21 @@ h1 {
 
 .list-group-flush > .list-group-item {
   border-color: white;
-  line-height: 70px;
+  line-height: 90px;
 }
 
 .info .contact_info ul li a {
-  font-size: 40px;
+  font-size: 35px;
   color: white;
   transition: all linear 0.4s;
   font-family: var(--secondary-font);
+  letter-spacing: 3px;
+  font-style: italic;
 }
-
+.info .contact_info ul li svg {
+  rotate: 391deg;
+  padding-right: 10px;
+}
 .info .contact_info ul li a:hover {
   color: var(--secondary-color);
 }
