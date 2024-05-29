@@ -114,7 +114,7 @@ header .navbar .main-nav .left {
 }
 
 header .navbar .main-nav .logo {
-  text-align: center;
+  text-align: right;
 }
 
 header .navbar .main-nav .right-icon {
@@ -617,8 +617,14 @@ h1 {
     z-index: 2;
   }
   .info .portfolio .overlay .h-btn {
-    top: 64%;
+    top: 37%;
     right: -8%;
+  }
+  .info .portfolio .overlay .h-btn a {
+    font-size: 14px;
+  }
+  .info .portfolio .overlay .h-btn {
+    padding: 7px 20px;
   }
   .mobile_none {
     display: none;
